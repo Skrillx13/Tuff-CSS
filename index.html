@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://latex.vercel.app/prism/prism.css">
+    <link rel="stylesheet" href="tuff.css">
+    <title>Tuff CSS</title>
+</head>
+
+<body>
+    <h1>Tuff CSS</h1>
+    <p>
+        This is a fork of the original <a target="_blank" href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a>
+        project. It adds extra functionality such as support for Syntax Highlighting through PrismJS, using the MathJax
+        library to render Mathematics, adding extra functionaity and fixing styles that are broken (The padding towards
+        the right is broken, and will not work for the original project).
+    </p>
+    <p><strong>NOTE!!!!</strong> Any "" you see are placeholders. They are meant to be code, but I'm working on shifting the
+        Syntax Highlighter. This also serves as a reminder for me, because I'm forgetfull.
+    </p>
+    <h2>Getting Started</h2>
+    <p>
+        Add <code class="language-html">&lt;link rel="stylesheet" href="https://latex.vercel.app/style.css"&gt;</code> to
+        the "" of your website, or install the package with <code class="language-shell">npm install tuff-css</code>.
+        From here, you can start writing your desired HTML, or load in any additional components, as referenced in the
+        section below.
+    </p>
+    <p>$$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$</p>
+    <h3>Additionals</h3>
+    <ul>
+        <li>
+            You can load all of our extra components by including "" at the end of the closing "" tag.
+        </li>
+        <li>
+            <strong>Syntax Highlighting:</strong> To add Syntax Highlighting to your website, add "" to the head of
+            your website. This is the CSS for our Prism theme. You will also need to add "" before the closing "" tag.
+            That is the Prism JavaScript, which is important.
+        </li>
+        <li>
+            <strong>Anchor Headings:</strong> To load Anchor Headings, include "" before the closing "" tag. This comes
+            with our own configuration for AnchorJS, which is a # for the icon, and custom scrolling behaviour.
+        </li>
+        <li>
+            <strong>MathJax Support:</strong> To include MathJax support, simply include "" before the closing "" tag.
+        </li>
+      </ul>  
+    <script src="tuff.bundled.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
