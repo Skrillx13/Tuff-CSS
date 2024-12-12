@@ -1,3 +1,5 @@
+/* Tuff Stylesheet */
+/* This is the main Stylesheet responsible for Tuff CSS. */
 @charset "UTF-8";
 
 /* Font Imports */
@@ -39,7 +41,7 @@
     font-display: swap;
 }
 
-/* Tufte CSS styles */
+/* General Styles */
 html {
     font-size: 15px;
     scroll-behavior: smooth;
@@ -50,13 +52,14 @@ body {
     margin-right: auto;
     padding-left: 18%;
     padding-right: 36%;
-    font-family: et-book, "EB Garamond", "Crimson Text", Georgia, serif;
     background-color: #fffff8;
     color: #111;
     max-width: 1400px;
     counter-reset: sidenote-counter;
+    font-family: et-book, "EB Garamond", "Crimson Text", Georgia, serif;
 }
 
+/* Typography */
 h1 {
     font-weight: 450;
     margin-top: 4rem;
